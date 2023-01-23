@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "3927971b-39da-4ba7-8e97-438c6ecd4fb1",
+		"name": "Skill Requests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16155143"
+	},
+	"item": [
+		{
+			"name": "Skill Index Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/skills",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"skills"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Skill Show Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/skills/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"skills",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Skill Delete Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/skills/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"skills",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Skill Update Request",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"Laravel up 1\",\n    \"slug\":\"laravel 1\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/skills/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"skills",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Skill Store Request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Vue\",\n    \"slug\": \"vue\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/skills",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"skills"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
